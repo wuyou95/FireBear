@@ -1,0 +1,34 @@
+package com.wuqi.dev.sqlite.db;
+
+/**
+ * Created by dllo on 17/4/14.
+ */
+
+public class MoneyEntity {
+    private String time;
+    private float money;
+
+    @Override
+    public String toString() {
+        return "MoneyEntity{" +
+                "time='" + time + '\'' +
+                ", money=" + money +
+                '}';
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public float getMoney() {
+        return money;
+    }
+
+    public void setMoney(float money) {
+        this.money = money;
+    }
+}

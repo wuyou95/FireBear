@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wuqi.dev.sqlite.MainActivity">
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="id"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="车名"/>
+
+        <EditText
+            android:id="@+id/et_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="selected"/>
+
+        <EditText
+            android:id="@+id/et_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="model"/>
+
+        <EditText
+            android:id="@+id/et_uuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="uuid"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addCar"
+            android:text="增加一条数据"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="removeCar"
+            android:text="删除一条数据"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="updateCar"
+            android:text="修改一条数据"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="queryCars"
+            android:text="查询显示数据"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setSelectedCarsID"
+            android:text="将当前车通过id设置为选中状态"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setSelectedCarsObj"
+            android:text="将当前车通过对象设置为选中状态"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="jump"
+            android:text="跳转"/>
+
+
+        <TextView
+            android:id="@+id/text_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
