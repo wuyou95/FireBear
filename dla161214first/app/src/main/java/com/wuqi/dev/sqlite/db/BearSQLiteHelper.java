@@ -21,6 +21,7 @@ class BearSQLiteHelper extends SQLiteOpenHelper {
     static final String SELECTED = "selected";
     static final String MODEL = "model";
     static final String UUID = "uuid";
+
     static final String RID = "id";
     static final String DATE = "date";
     static final String ODOMETER = "odometer";

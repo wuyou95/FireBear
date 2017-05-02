@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanou.wuyou.fearbear.tool.SlidingMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wuyou="http://schemas.android.com/apk/res/com.lanou.wuyou.fearbear"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    wuyou:rightPadding="100dp"
+    android:id="@+id/sliding_menu">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <include layout="@layout/sliding_menu"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/icon_tv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon"
+            android:onClick="toggleMenu"/>
+        <TextView
+            android:id="@+id/icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小熊油耗"
+            android:layout_toRightOf="@id/icon_tv"
+            android:textSize="30sp"
+            android:onClick="toggleMenu"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:theme="@android:style/Theme.Holo"/>
+        <View
+            android:layout_below="@id/icon_tv"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#00d3f9"/>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_below="@id/icon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabIndicatorHeight="8dp"
+            app:tabIndicatorColor="#00d3f9">
+        </android.support.design.widget.TabLayout>
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/add"
+                android:layout_margin="10dp"
+                android:onClick="add"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/manage"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/discover"
+                android:layout_margin="15dp"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/share"
+                android:layout_margin="10dp"/>
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_layout"
+            android:layout_above="@id/radio_group">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+</com.lanou.wuyou.fearbear.tool.SlidingMenu>

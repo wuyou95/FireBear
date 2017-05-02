@@ -16,7 +16,7 @@ public class CarOperationAndroid implements TableCarOperation {
 
     private SQLiteOpenHelper mHelper;
 
-    public CarOperationAndroid (SQLiteOpenHelper helper) {
+    public CarOperationAndroid (BearSQLiteHelper helper) {
         mHelper = helper;
     }
 
