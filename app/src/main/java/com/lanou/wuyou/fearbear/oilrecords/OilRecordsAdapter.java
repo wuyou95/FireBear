@@ -61,7 +61,7 @@ public class OilRecordsAdapter extends BaseAdapter{
         }
 
         holder.dateTv.setText(String.valueOf(getDateToString((int)recordsEntities.get(position).getDate())));
-        holder.kiloTv.setText(Integer.toString(recordsEntities.get(position).getOdometer() - recordsEntities.get(position - 1).getOdometer()));
+        holder.kiloTv.setText(Integer.toString(recordsEntities.get(position).getOdometer());
 
 //        holder.consumTv.setText(recordsEntities.get(position).);
         return convertView;
