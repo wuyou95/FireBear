@@ -3,7 +3,6 @@ package com.lanou.wuyou.fearbear.consumption;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -147,7 +146,6 @@ public class OilFirstFragment extends Fragment{
                         for (int i = 0; i < recordsEntities.size(); i++) {
                             dates[i] = recordsEntities.get(i).getDate();
                             getYearToString(dates[i]);
-                            Log.d("111", getMonthToString(dates[i]));
                         }
                         consume = new float[recordsEntities.size()];
                         odometer = new int[recordsEntities.size()];

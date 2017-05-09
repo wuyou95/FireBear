@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".addoil.OilAddActivity"/>
         <activity android:name=".add.AddActivity"/>
+        <activity android:name=".oilrecords.OilRecordsActivity"/>
     </application>
 
 </manifest>

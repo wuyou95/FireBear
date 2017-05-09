@@ -27,6 +27,7 @@ import com.lanou.wuyou.fearbear.consumption.OilFirstFragment;
 import com.lanou.wuyou.fearbear.db.DatabaseTool;
 import com.lanou.wuyou.fearbear.db.RxSQLite;
 import com.lanou.wuyou.fearbear.entity.CarEntity;
+import com.lanou.wuyou.fearbear.oilrecords.OilRecordsActivity;
 import com.lanou.wuyou.fearbear.ranking.RankingFragment;
 import com.lanou.wuyou.fearbear.tool.OnViewClickListener;
 import com.lanou.wuyou.fearbear.tool.SlidingMenu;
@@ -234,6 +235,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void add(View view){
         Intent intent = new Intent(MainActivity.this,OilAddActivity.class);
+        startActivity(intent);
+    }
+
+    public void oil(View view) {
+        Intent intent = new Intent(MainActivity.this, OilRecordsActivity.class);
         startActivity(intent);
     }
 }
