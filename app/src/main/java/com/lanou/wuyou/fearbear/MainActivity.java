@@ -9,7 +9,6 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -58,8 +57,6 @@ public class MainActivity extends AppCompatActivity {
     private ListAdapter listAdapter;
     private TextView textView;
     private int newPosition;
-    private int a;
-    private long date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, final int position, long id) {
 
                 if (position == spinner.getCount() - 1){
-                    Log.d("222", "spinner.getCount():" + spinner.getCount());
                     dialog = new AlertDialog.Builder(MainActivity.this).create();
                     view = LayoutInflater.from(MainActivity.this).inflate(R.layout.view_dialog, parent, false);
                     dialog.setView(view);
@@ -122,6 +118,10 @@ public class MainActivity extends AppCompatActivity {
                                             Intent intent = new Intent(MainActivity.this,AddActivity.class);
                                             startActivityForResult(intent,0);
                                         }
+
+
+
+
                                     });
                                     listAdapter.setOnViewClickListener(new OnViewClickListener() {
                                         @Override

@@ -15,7 +15,6 @@ class BearSQLiteHelper extends SQLiteOpenHelper {
 
     static final String CARS_TBL = "cars_tbl";
     static final String RECORDS_TBL = "records_tbl";
-    static final String DETAIL_YBL = "detail_tbl";
 
     static final String _ID = "_id";
     static final String NAME = "name";

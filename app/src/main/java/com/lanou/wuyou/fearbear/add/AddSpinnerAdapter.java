@@ -23,7 +23,7 @@ public class AddSpinnerAdapter extends BaseAdapter{
     }
 
     public void setEntities(BrandEntity brandEntity) {
-     this.brandEntity=brandEntity;
+     this.brandEntity = brandEntity;
         notifyDataSetChanged();
     }
 

@@ -24,16 +24,6 @@ public class RecordsOperationAndroid implements TableRecordsoperation {
         this.helper = helper;
     }
 
-    //    static final String DATE = "date";
-//    static final String ODOMETER = "odometer";
-//    static final String PRICE = "price";
-//    static final String TYPE = "type";
-//    static final String GASSUP = "gassup";
-//    static final String REMARK = "remark";
-//    static final String CARLD = "carld";
-//    static final String FORGET = "forget";
-//    static final String LIGHTON = "lightOn";
-//    static final String STATIONLD = "stationld";
     @Override
     public void addRecords(RecordsEntity recordsEntity) {
         SQLiteDatabase db = helper.getWritableDatabase();

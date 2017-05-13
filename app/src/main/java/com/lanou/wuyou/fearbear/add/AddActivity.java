@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -74,8 +73,6 @@ public class AddActivity extends AppCompatActivity{
                 intent.putExtra("type",name3);
                 intent.putExtra("nameDetail",name);
                 startActivityForResult(intent,0);
-                Log.d("111", "editText:" + editText.getText().toString());
-                Log.d("111", name1 + name2 + name3);
                 carEntityList = new ArrayList<>();
                 carEntity.setName(editText.getText().toString());
                 carEntityList.add(carEntity);
@@ -98,7 +95,6 @@ public class AddActivity extends AppCompatActivity{
                             public void accept(@NonNull BrandEntity brandEntity) throws Exception {
                                 index = brandEntity.getIdxes().get(position);
                                 name1 = brandEntity.getNames().get(position);
-                                Log.d("111", name1);
                                 series();
                             }
                         });
@@ -120,7 +116,6 @@ public class AddActivity extends AppCompatActivity{
                             public void accept(@NonNull BrandEntity brandEntity) throws Exception {
                                 series = brandEntity.getIdxes().get(position);
                                 name2 = brandEntity.getNames().get(position);
-                                Log.d("111", name2);
                                 type();
                             }
                         });
@@ -143,7 +138,6 @@ public class AddActivity extends AppCompatActivity{
                             public void accept(@NonNull BrandEntity brandEntity) throws Exception {
                                 type = brandEntity.getIdxes().get(position);
                                 name3 = brandEntity.getNames().get(position);
-                                Log.d("111", name3);
                                 detail();
                             }
                         });
@@ -214,7 +208,6 @@ public class AddActivity extends AppCompatActivity{
                             rightTv.setText(carDetailEntity.getGearbox());
                             name = carDetailEntity.getName();
                             int id = carDetailEntity.getId();
-                            Toast.makeText(AddActivity.this, "status:" + id, Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
